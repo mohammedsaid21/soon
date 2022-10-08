@@ -1,0 +1,209 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-family: 'Changa', sans-serif;
+  overflow-x: hidden;
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Div Center */
+.center {
+  background-image: url("hero.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  width: 100%;
+  text-align: center;
+  transition: .5s all;
+  animation: move 1s linear alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(100px);
+  } 
+  100% {
+    transform: translateX(0px);
+  } 
+}
+
+.center h2 {
+  color: #fff;
+  font-size: 4.25rem;
+}
+
+.center p {
+  font-size: 1.35rem;
+  margin-bottom: 20px;
+  color: #dccfff
+}
+
+/* Div Clock */
+#clock {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#clock div {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  padding: 20px 10px;
+  margin: 5px;
+  color: #fff;
+  background: #9A7DEB;
+  border-radius: 8px;
+  overflow: hidden;
+
+}
+
+#clock div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, .1);
+}
+
+#clock div span {
+  display: block;
+  text-align: center;
+}
+
+#clock div span:nth-child(1) {
+  font-size: 24px;
+  font-weight: 800
+}
+
+#clock div span:nth-child(2) {
+  font-size: 18px;
+  font-weight: 800
+}
+
+/* Div Social */
+.center .social {
+  margin: 15px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.center .social .see {
+  color: #fff;
+  font-size: 12px;
+}
+
+.center .social li {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.center .social li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.center .social li a {
+  background: #9A7DEB;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: .5s;
+}
+
+.center .social li a:hover {
+  background: #A48AED
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
+
+  .center h2 {
+    font-size: 2.25rem;
+  }
+
+  .center p {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+  }
+
+  #clock div {
+    width: 50px;
+    padding: 10px 5px;
+    margin: 5px;
+  }
+
+  #clock div span:nth-child(1) {
+    font-size: 18px;
+    font-weight: 800
+  }
+
+  #clock div span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 800
+  }
+
+  .center .social {
+    margin: 0;
+  }
+
+  .center .social li a {
+    padding: 3px 5px;
+  }
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 767.98px) {
+
+  .center h2 {
+    padding-top: 30px;
+    font-size: 3rem;
+  }
+
+  .center p {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+  }
+
+  #clock {
+    padding-top: 20px;
+  }
+
+  #clock div {
+    width: 80px;
+    padding: 10px 5px;
+    margin: 5px;
+  }
+
+  #clock div span:nth-child(1) {
+    font-size: 18px;
+    font-weight: 800
+  }
+
+  #clock div span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 800
+  }
+
+  .center .social {
+    margin: 0;
+  }
+
+  .center .social li a {
+    padding: 3px 5px;
+  }
+
+}
