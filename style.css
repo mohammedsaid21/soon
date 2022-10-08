@@ -24,7 +24,7 @@ p {
   width: 100%;
   text-align: center;
   transition: .5s all;
-  animation: move 1s linear alternate;
+/*   animation: move 1s linear alternate; */
 }
 
 @keyframes move {
